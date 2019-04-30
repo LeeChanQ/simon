@@ -160,13 +160,13 @@ body {
   /* background-image: linear-gradient(red,green); */
   background-color: #e9edef;
 }
-.container {
+.container{
   box-sizing: border-box;
   width: 1200px;
   margin: 0 auto;
 }
 /* 헤더 */
-.header {
+.header{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -174,10 +174,10 @@ body {
   margin: 80px 0;
 }
 /* 메인메뉴 */
-.menu {
+.menu{
   display: flex;
 }
-.menu li {
+.menu li{
   font-size: 2.5rem;
   font-family: "spoqa Han Sans", sans-serif;
   font-weight: 700;
@@ -192,12 +192,14 @@ body {
 .thumbnail {
   float: left;
 }
-.product {
+.product{
   background-color: #fff;
   border: 1px solid #aaa;
   padding: 50px;
   margin: 40px;
   display: flex;
+  align-items: center;
+/* align0items 항목들을 전체에서 중앙정렬 */
 }
 /* 플로트를 활용한 레이아웃 */
 /* .product .wrapper{
@@ -205,16 +207,36 @@ body {
 	float: left;
 }*/
 /* flex를 활용한 레이아웃 */
-.product .wrapper {
-  background-color: pink;
-}
 .thumbnail {
-  margin-right: 50px;
+  margin-right: 50px; 
 }
-.product .subject {
-  background-color: skyblue;
+.product .subject{
   font-family: "Spoqa Han Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
-  font
+  font-size: 3.5rem;
+}
+.product .summary{
+  margin: 1em 0;
+}
+.product .more{
+  color: #EF5350;
+  font-size: 1.5rem;
+}
+.footer{
+  margin: 150px 0 50px;
+  font-size: 1.5rem;
+  display: flex;
+}
+.email{
+}
+.sns{
+  display: flex;
+}
+.sns li::before{
+  content: " · ";
+  margin-left: 0 5px;
+}
+.copyright{
+  margin-left: auto;
 }
