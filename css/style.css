@@ -228,14 +228,13 @@ body {
   font-size: 1.5rem;
   display: flex;
 }
-.email{
-}
 .sns{
   display: flex;
+  list-style: none;
 }
 .sns li::before{
   content: " · ";
-  margin-left: 0 5px;
+ margin: 0 5px;
 }
 .copyright{
   margin-left: auto;
